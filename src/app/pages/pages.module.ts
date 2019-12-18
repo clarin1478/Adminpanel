@@ -3,6 +3,8 @@
 // Podemos ordenarlos para trabajar mejor.
 import { NgModule } from '@angular/core';
 
+import { FormsModule } from '@angular/forms';
+
 // Importamos el modulo Shared para tener solo una importación en app.module.ts
 import { SharedModule } from '../shared/shared.module';
 
@@ -15,13 +17,24 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 // Importamos las rutas del page routes
 import { PAGES_ROUTES } from './pages.routes';
 
+// ng-2 charts
+
+import { ChartsModule } from 'ng2-charts';
+
+
+// temporal
+import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
+
 @NgModule({
     // Declaramos los componentes a importar
     declarations: [
         PagesComponent,
         DashboardComponent,
         ProgressComponent,
-        Graficas1Component
+        Graficas1Component,
+        IncrementadorComponent,
+        GraficoDonaComponent
     ],
 
     // Tenemos que exportar estos componente, ya que serán
@@ -35,7 +48,9 @@ import { PAGES_ROUTES } from './pages.routes';
     // Para ello importamos el modulo Shared
     imports: [
         SharedModule,
-        PAGES_ROUTES
+        PAGES_ROUTES,
+        FormsModule,
+        ChartsModule,
     ]
 })
 
