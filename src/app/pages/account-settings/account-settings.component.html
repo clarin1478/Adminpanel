@@ -1,0 +1,34 @@
+
+ <div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-header">Temas</div>
+            <div class="card-body">
+                <div class="r-panel-body">
+                    <ul id="themecolors" class="m-t-20">
+                        <li><b>Con el sidebar claro</b></li>
+                        <!-- Al hacer click llamamos a la función cambiarColor con los diferentes temas como parámetros-->
+                        <!-- También numeramos con el tag #xLink y lo pasamos como parámetro en la función cambiarColor-->
+                        <li><a #xLink1 (click)="cambiarColor('default', xLink1)" data-theme="default" class="selector default-theme">1</a></li>
+                        <li><a #xLink2 (click)="cambiarColor('green', xLink2)" data-theme="green" class="selector green-theme">2</a></li>
+                        <li><a #xLink3 (click)="cambiarColor('red', xLink3)" data-theme="red" class="selector red-theme">3</a></li>
+                        <li><a #xLink4 (click)="cambiarColor('blue', xLink4)" data-theme="blue" class="selector blue-theme">4</a></li>
+                        <li><a #xLink5 (click)="cambiarColor('purple', xLink5)" data-theme="purple" class="selector purple-theme">5</a></li>
+                        <li><a #xLink6 (click)="cambiarColor('megna', xLink6)" data-theme="megna" class="selector megna-theme">6</a></li>
+                        
+                        <li class="d-block m-t-30"><b>Con el sidebar oscuro</b></li>
+                        <li><a #xLink7 (click)="cambiarColor('default-dark', xLink7)" data-theme="default-dark" class="selector default-dark-theme">7</a></li>
+                        <li><a #xLink8 (click)="cambiarColor('green-dark', xLink8)" data-theme="green-dark" class="selector green-dark-theme">8</a></li>
+                        <li><a #xLink9 (click)="cambiarColor('red-dark', xLink9)" data-theme="red-dark" class="selector red-dark-theme">9</a></li>
+                        <li><a #xLink10 (click)="cambiarColor('blue-dark', xLink10)" data-theme="blue-dark" class="selector blue-dark-theme">10</a></li>
+                        <li><a #xLink11 (click)="cambiarColor('purple-dark', xLink11)" data-theme="purple-dark" class="selector purple-dark-theme">11</a></li>
+                        <li><a #xLink12 (click)="cambiarColor('megna-dark', xLink12)" data-theme="megna-dark" class="selector megna-dark-theme">12</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
